@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Parking/ParkingSearch.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/Parking</a> ParkingSearch.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/52</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/50</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-8"&gt;
+    &lt;div class="row"&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Search Parkings&lt;/legend&gt;
+        &lt;form class="form-signin" @submit.prevent="parkingSearch"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;div class="col-sm-3"&gt;
+              &lt;label for="inputLocation"&gt;Location&lt;/label&gt;
+              &lt;input v-model="Location" type="text" id="inputLocation" class="form-control" placeholder="Location" required autofocus&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-3"&gt;
+              &lt;label for="inputStartTime"&gt;Start Time&lt;/label&gt;
+              &lt;date-picker v-model="StartTime"&gt;&lt;/date-picker&gt;
+              &lt;!--enddate &lt;input v-model="StartTime" type="text" id="inputStartTime" class="form-control date" placeholder="StartTime" required&gt; --&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-3"&gt;
+              &lt;label for="inputEndTime"&gt;EndTime&lt;/label&gt;
+              &lt;date-picker v-model="EndTime"&gt;&lt;/date-picker&gt;
+              &lt;!-- &lt;input v-model="EndTime" type="text" id="inputEndTime" class="form-control date" placeholder="EndTime" required&gt; --&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-3"&gt;
+              &lt;button class="btn btn-sm btn-primary" type="submit"&gt;Search&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;br /&gt;
+      &lt;fieldset&gt;
+        &lt;gmap-map v-bind:center = "center" v-bind:zoom= "12" style="height: 400px"&gt;
+          &lt;gmap-info-window v-bind:options="infoOptions" v-bind:position="infoWindowPos" v-bind:opened="infoWinOpen" @closeclick="infoWinOpen=false"&gt;
+          &lt;/gmap-info-window&gt;
+          &lt;gmap-marker
+          v-bind:key= "index"
+          v-for = "(m,index) in markers"
+          v-bind:position = "m.position"
+          v-bind:clickable = "true"
+          @click="toggleInfoWindow(m,index)"&gt;
+          &lt;/gmap-marker&gt;
+        &lt;/gmap-map&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Location Details&lt;/legend&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;label&gt;Parking Slot: {{parkingObj.name}} &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;label&gt;Parking Zone: {{parkingObj.catname}} &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;label&gt;Free Minutes: {{parkingObj.freeminutes}} &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;label&gt;Hourly Rate: {{parkingObj.ratehour}} &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;label&gt;Real Time Rate: {{parkingObj.raterealtime}} &lt;/label&gt;
+        &lt;/div&gt;  
+        &lt;div class="col-sm-6"&gt;
+          &lt;label for="extHourly"&gt;Estimated Hourly Rate:&lt;/label&gt;
+          &lt;input v-model="HourlyPrice" type="text" class="form-control" readonly&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-6"&gt;
+          &lt;label for="estRealTime"&gt;Estimated RealTime Rate:&lt;/label&gt;
+          &lt;input v-model="RealTimePrice" type="text" class="form-control" readonly&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;br /&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Booking Confirmation&lt;/legend&gt;
+        &lt;form class="form" @submit.prevent="parkingConfirmation"&gt;
+          &lt;div class="col-md-12"&gt;
+            &lt;input v-model="FinalLocation" type="text" id="inputLocation" class="form-control" placeholder="Location" required readonly style="display: none"&gt;
+            &lt;input v-model="FinalStartDate" type="text" id="inputLocation" class="form-control" placeholder="Location" required readonly style="display: none"&gt;
+            &lt;input v-model="FinalEndDate" type="text" id="inputLocation" class="form-control" placeholder="Location" required readonly style="display: none"&gt;
+            &lt;div class="col-sm-12"&gt;
+              &lt;label for="inputEndTime"&gt;Payment Type&lt;/label&gt;
+              &lt;!-- &lt;input v-model="FinalPaymentType" type="text" id="inputEndTime" class="form-control date" placeholder="EndTime" required&gt; --&gt;
+              &lt;select v-model="FinalPaymentType" class="form-control"&gt;
+                &lt;option value="1" selected&gt;Hourly&lt;/option&gt;
+                &lt;option value="2"&gt;Real Time&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-12"&gt;
+              &lt;br /&gt;
+              &lt;button class="btn btn-sm btn-success btn-block" type="submit"&gt;Confirm&lt;/button&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  &lt;!--&lt;div class="row"&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;S/n&lt;/th&gt;
+                &lt;th&gt;Location&lt;/th&gt;
+                &lt;th&gt;Category&lt;/th&gt;
+                &lt;th&gt;Free Min&lt;/th&gt;
+                &lt;th&gt;Rate(Hourly)&lt;/th&gt;
+                &lt;th&gt;Rate(RealTime)&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr v-for="parking in parkings" :key="parking.id"&gt;
+                &lt;td&gt;{{parking.id}}&lt;/td&gt;
+                &lt;td&gt;{{parking.name}}&lt;/td&gt;
+                &lt;td&gt;{{parking.catname}}&lt;/td&gt;
+                &lt;td&gt;{{parking.freeminutes}}&lt;/td&gt;
+                &lt;td&gt;{{parking.ratehour}}&lt;/td&gt;
+                &lt;td&gt;{{parking.raterealtime}}&lt;/td&gt;
+                &lt;td&gt;{{parking.status}}&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;--&gt;
+&nbsp;
+&lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import moment from 'moment';</span>
+<span class="cstat-no" title="statement not covered" >import datePicker from 'vue-bootstrap-datetimepicker';</span>
+// You have to add CSS yourself
+<span class="cstat-no" title="statement not covered" >import 'eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css';</span>
+// Bootstrap css  
+<span class="cstat-no" title="statement not covered" >import 'bootstrap/dist/css/bootstrap.css';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import axios from 'axios'</span>
+&nbsp;
+export default {
+  name: 'ParkingSearch',
+<span class="fstat-no" title="function not covered" >  data () {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        Location: '',
+        StartTime: new Date(),
+        EndTime: new Date(),
+        parkings: [],
+        parkingObj: {},
+        center: {
+          lat:58.3826467, 
+          lng: 26.7321937
+        },
+        infoWindowPos: null,
+        infoWinOpen: false,
+        currentMidx: null,
+        infoOptions: {
+        content: '',
+          //optional: offset infowindow so it visually sits nicely on top of our marker
+          pixelOffset: {
+            width: 0,
+            height: -35
+          }
+        },
+        markers: [
+          {
+            position: {lat:58.3826467, lng: 26.7321937}
+          }
+        ],
+        
+        //Confirmation DataFields
+        FinalLocation: '',
+        FinalStartDate:'',
+        FinalEndDate:  '',
+        FinalPaymentType: '1',
+        // Price Calculation
+        HourlyPrice: '0',
+        RealTimePrice: '0'
+    }
+  },
+  components:{
+    datePicker
+  },
+  methods: {
+<span class="fstat-no" title="function not covered" >    toggleInfoWindow: function(marker, idx) {</span>
+<span class="cstat-no" title="statement not covered" >      this.infoWindowPos = marker.position;</span>
+<span class="cstat-no" title="statement not covered" >      this.infoOptions.content = marker.infoText;</span>
+      //check if its the same marker that was selected if yes toggle
+<span class="cstat-no" title="statement not covered" >      if (this.currentMidx == idx) {</span>
+<span class="cstat-no" title="statement not covered" >        this.infoWinOpen = !this.infoWinOpen;</span>
+      }
+      //if different marker set infowindow to open and reset current marker index
+      else {
+<span class="cstat-no" title="statement not covered" >        this.infoWinOpen = true;</span>
+<span class="cstat-no" title="statement not covered" >        this.currentMidx = idx;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      this.parkingObj = this.parkings[idx];</span>
+      
+      //Setting Final Confirmation Details
+<span class="cstat-no" title="statement not covered" >      this.FinalLocation = this.parkingObj.id;</span>
+<span class="cstat-no" title="statement not covered" >      this.FinalStartDate = this.StartTime;</span>
+<span class="cstat-no" title="statement not covered" >      this.FinalEndDate = this.EndTime;</span>
+&nbsp;
+      //Calculating Price using time
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      if(this.EndTime != String.empty &amp;&amp; this.StartTime != String.empty) {</span></span></span></span>
+        function diff_hours(dt2, dt1) 
+        {
+<span class="cstat-no" title="statement not covered" >          var diff =(dt2.getTime() - dt1.getTime()) / 1000;</span>
+<span class="cstat-no" title="statement not covered" >          diff /= (60 * 60);</span>
+<span class="cstat-no" title="statement not covered" >          return Math.abs(Math.round(diff));</span>
+        }
+        function diff_mins(dt2, dt1) 
+        {
+<span class="cstat-no" title="statement not covered" >          var diff =(dt2.getTime() - dt1.getTime()) / 1000;</span>
+<span class="cstat-no" title="statement not covered" >          diff /= (60);</span>
+<span class="cstat-no" title="statement not covered" >          return Math.abs(Math.round(diff));</span>
+        }
+<span class="cstat-no" title="statement not covered" >        var timeStart = new Date(this.StartTime);</span>
+<span class="cstat-no" title="statement not covered" >        var timeEnd = new Date(this.EndTime);</span>
+<span class="cstat-no" title="statement not covered" >        this.HourlyPrice = this.parkingObj.ratehour * diff_hours(timeStart,timeEnd)</span>
+<span class="cstat-no" title="statement not covered" >        this.RealTimePrice = this.parkingObj.raterealtime * Math.abs(Math.ceil((diff_mins(timeStart,timeEnd)/5)))</span>
+      }
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    async parkingSearch() {</span></span>
+      try{
+<span class="cstat-no" title="statement not covered" >        const {data} = await axios.post('http://localhost:4000/api/search/', {destination: this.Location, starttime: this.StartTime, endtime: this.EndTime}, { headers: {"Authorization" : `Bearer ${localStorage.getItem('token')}`}})</span>
+<span class="cstat-no" title="statement not covered" >        this.parkings = data</span>
+        
+<span class="cstat-no" title="statement not covered" >        this.markers = []</span>
+        
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        data.forEach(item =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          var temp = {</span>
+            position: {
+              lat:item['latitude'], 
+              lng: item['longitude']
+            },
+            infoText: '&lt;strong&gt;'+ item['name'] +'&lt;/strong&gt;',
+            catname: item["catname"] 
+          }
+<span class="cstat-no" title="statement not covered" >          this.markers.push(temp)            </span>
+        });
+&nbsp;
+      } catch(e) {
+<span class="cstat-no" title="statement not covered" >        console.log(e)</span>
+      }
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    async parkingConfirmation (){</span></span>
+      try{
+<span class="cstat-no" title="statement not covered" >        const {data} = await axios.post('http://localhost:4000/api/bookings/new', {start_time: this.FinalStartDate, end_time: this.FinalEndDate, parking_id: this.FinalLocation, calc_criteria: this.FinalPaymentType}, { headers: {"Authorization" : `Bearer ${localStorage.getItem('token')}`}})</span>
+<span class="cstat-no" title="statement not covered" >        this.parkings = data</span>
+<span class="cstat-no" title="statement not covered" >        alert('Booking Created')</span>
+<span class="cstat-no" title="statement not covered" >        this.$router.push('/BookingList')</span>
+      } catch(e) {
+<span class="cstat-no" title="statement not covered" >        console.log(e)</span>
+<span class="cstat-no" title="statement not covered" >        alert('Error:'+ e)</span>
+      }
+    }
+  },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  async created () {</span></span>
+<span class="cstat-no" title="statement not covered" >    this.markers = []</span>
+    try {
+      // $('.date').datetimepicker();
+<span class="cstat-no" title="statement not covered" >      const {data} = await axios.get('http://localhost:4000/api/search/index', { headers: {"Authorization" : `Bearer ${localStorage.getItem('token')}`}})</span>
+<span class="cstat-no" title="statement not covered" >      this.parkings = data</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      data.forEach(item =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          var temp = {</span>
+            position: {
+              lat:item['latitude'], 
+              lng: item['longitude']
+            },
+            infoText: '&lt;strong&gt;'+ item["name"] + '&lt;/strong&gt;'
+          }
+<span class="cstat-no" title="statement not covered" >          this.markers.push(temp)            </span>
+        });
+      } catch (e) {
+<span class="cstat-no" title="statement not covered" >        console.log(e)</span>
+    }
+  }
+}
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 09 2019 12:41:50 GMT+0200 (Eastern European Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

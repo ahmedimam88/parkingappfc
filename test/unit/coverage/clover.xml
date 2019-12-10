@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1575888110189" clover="3.2.0">
+  <project timestamp="1575888110190" name="All files">
+    <metrics statements="198" coveredstatements="0" conditionals="67" coveredconditionals="0" methods="59" coveredmethods="0" elements="324" coveredelements="0" complexity="0" loc="198" ncloc="198" packages="5" files="11" classes="11">
+      <package name="src">
+        <metrics statements="53" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="19" coveredmethods="0"/>
+        <file name="App.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/App.vue">
+          <metrics statements="5" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+        </file>
+        <file name="store.js" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/store.js">
+          <metrics statements="48" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="69" count="0" type="stmt"/>
+          <line num="73" count="0" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="29" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="13" coveredmethods="0"/>
+        <file name="Home.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Home.vue">
+          <metrics statements="6" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="25" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+        </file>
+        <file name="Login.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Login.vue">
+          <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+        </file>
+        <file name="Register.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Register.vue">
+          <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+        </file>
+        <file name="UsersList.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/UsersList.vue">
+          <metrics statements="6" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="37" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components.Booking">
+        <metrics statements="44" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <file name="BookingList.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Booking/BookingList.vue">
+          <metrics statements="29" coveredstatements="0" conditionals="19" coveredconditionals="0" methods="6" coveredmethods="0"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="70" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="72" count="0" type="stmt"/>
+          <line num="73" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="81" count="0" type="stmt"/>
+          <line num="82" count="0" type="stmt"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="85" count="0" type="stmt"/>
+          <line num="86" count="0" type="stmt"/>
+          <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="89" count="0" type="stmt"/>
+          <line num="90" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="91" count="0" type="stmt"/>
+          <line num="94" count="0" type="stmt"/>
+          <line num="96" count="0" type="stmt"/>
+          <line num="98" count="0" type="cond" truecount="0" falsecount="8"/>
+          <line num="100" count="0" type="stmt"/>
+          <line num="102" count="0" type="stmt"/>
+          <line num="106" count="0" type="stmt"/>
+          <line num="107" count="0" type="stmt"/>
+          <line num="109" count="0" type="stmt"/>
+        </file>
+        <file name="ExtendBooking.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Booking/ExtendBooking.vue">
+          <metrics statements="15" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="46" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components.Dashboard">
+        <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <file name="Dashboard.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Dashboard/Dashboard.vue">
+          <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="69" count="0" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="72" count="0" type="stmt"/>
+          <line num="73" count="0" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
+          <line num="98" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components.Parking">
+        <metrics statements="56" coveredstatements="0" conditionals="26" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <file name="ParkingList.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Parking/ParkingList.vue">
+          <metrics statements="6" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="41" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+        </file>
+        <file name="ParkingSearch.vue" path="/home/ahmed/Desktop/Tartu/Semester1/Agile/Project/parkingappfrontend/src/components/Parking/ParkingSearch.vue">
+          <metrics statements="50" coveredstatements="0" conditionals="21" coveredconditionals="0" methods="8" coveredmethods="0"/>
+          <line num="135" count="0" type="stmt"/>
+          <line num="136" count="0" type="stmt"/>
+          <line num="138" count="0" type="stmt"/>
+          <line num="140" count="0" type="stmt"/>
+          <line num="142" count="0" type="stmt"/>
+          <line num="147" count="0" type="stmt"/>
+          <line num="189" count="0" type="stmt"/>
+          <line num="190" count="0" type="stmt"/>
+          <line num="192" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="193" count="0" type="stmt"/>
+          <line num="197" count="0" type="stmt"/>
+          <line num="198" count="0" type="stmt"/>
+          <line num="200" count="0" type="stmt"/>
+          <line num="203" count="0" type="stmt"/>
+          <line num="204" count="0" type="stmt"/>
+          <line num="205" count="0" type="stmt"/>
+          <line num="208" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="211" count="0" type="stmt"/>
+          <line num="212" count="0" type="stmt"/>
+          <line num="213" count="0" type="stmt"/>
+          <line num="217" count="0" type="stmt"/>
+          <line num="218" count="0" type="stmt"/>
+          <line num="219" count="0" type="stmt"/>
+          <line num="221" count="0" type="stmt"/>
+          <line num="222" count="0" type="stmt"/>
+          <line num="223" count="0" type="stmt"/>
+          <line num="224" count="0" type="stmt"/>
+          <line num="227" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="229" count="0" type="stmt"/>
+          <line num="230" count="0" type="stmt"/>
+          <line num="232" count="0" type="stmt"/>
+          <line num="234" count="0" type="stmt"/>
+          <line num="235" count="0" type="stmt"/>
+          <line num="243" count="0" type="stmt"/>
+          <line num="247" count="0" type="stmt"/>
+          <line num="250" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="252" count="0" type="stmt"/>
+          <line num="253" count="0" type="stmt"/>
+          <line num="254" count="0" type="stmt"/>
+          <line num="255" count="0" type="stmt"/>
+          <line num="257" count="0" type="stmt"/>
+          <line num="258" count="0" type="stmt"/>
+          <line num="262" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="263" count="0" type="stmt"/>
+          <line num="266" count="0" type="stmt"/>
+          <line num="267" count="0" type="stmt"/>
+          <line num="268" count="0" type="stmt"/>
+          <line num="269" count="0" type="stmt"/>
+          <line num="276" count="0" type="stmt"/>
+          <line num="279" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
