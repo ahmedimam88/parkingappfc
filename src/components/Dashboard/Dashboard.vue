@@ -65,7 +65,7 @@ export default {
     }
   },
   // Notification Engine using Phoenix Socket and Channel
-  mounted() { 
+  mounted() {
       this.userID = localStorage.getItem('userID')
       this.userName = localStorage.getItem('userName')
       let socket = new Socket("ws://parkingapp.gigalixirapp.com/socket")
@@ -73,9 +73,9 @@ export default {
       this.channel = socket.channel(`user:${this.userID}`)
       this.channel.join()
       this.channel.on('new_link_added', payload => {
-      this.$toasted.show('Hi '+ this.userName + " " + payload.link.data,{ 
-                      theme: "bubble", 
-                      position: "top-right", 
+      this.$toasted.show('Hi '+ this.userName + " " + payload.link.data,{
+                      theme: "bubble",
+                      position: "top-right",
                       duration : 10000,
                       action : [
                         {
